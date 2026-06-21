@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.mayasmomentsfl.com/sitemap.xml
