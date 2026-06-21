@@ -49,6 +49,18 @@
   }
 
   /* ----------------------------------------------------------------
+     Photo protection: disable right-click and drag-to-save on images
+     This stops casual theft. Watermarks in the image files are the
+     real protection for anyone who digs deeper.
+     ---------------------------------------------------------------- */
+  document.addEventListener('contextmenu', function (e) {
+    if (e.target.tagName === 'IMG') e.preventDefault();
+  });
+  document.addEventListener('dragstart', function (e) {
+    if (e.target.tagName === 'IMG') e.preventDefault();
+  });
+
+  /* ----------------------------------------------------------------
      Active nav link: mark the current page's nav link
      ---------------------------------------------------------------- */
   var currentPage = window.location.pathname.split('/').pop() || 'index.html';

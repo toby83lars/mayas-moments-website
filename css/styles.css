@@ -746,6 +746,32 @@ p { max-width: 68ch; }
 }
 
 /* ================================================================
+   15b. PINTEREST SHARE BUTTON (injected by gallery.js on each item)
+   ================================================================ */
+.gallery-item-overlay {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.pin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: #E60023;   /* Pinterest red */
+  border-radius: 50%;
+  color: var(--white);
+  flex-shrink: 0;
+  transition: transform var(--ease), background-color var(--ease);
+  text-decoration: none;
+}
+
+.pin-btn:hover { background: #ad081b; transform: scale(1.1); }
+
+.pin-btn svg { width: 18px; height: 18px; }
+
+/* ================================================================
    16. LIGHTBOX
    ================================================================ */
 .lightbox {
