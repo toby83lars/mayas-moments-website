@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maya's Moments FL — Capturing Your Moments</title>
+  <meta name="description" content="Professional photography in South Florida. Weddings, family sessions, maternity, newborns, engagements, and more. Serving the greater South Florida area.">
+
+  <!-- ⚠️  LOGO PLACEHOLDER: swap src with real logo file once Maya provides it.
+       Recommended: SVG or PNG with transparent background, ~200px wide.
+       Also update the footer logo (same src). -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION (shared on every page)
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="site-logo" aria-label="Maya's Moments FL — Home">
+        <img src="images/logo.jpg" alt="Maya's Moments FL logo" width="48" height="48">
+        <div class="logo-text">
+          Maya's Moments FL
+          <span>Capturing Your Moments</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="nav-menu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html"   class="nav-link">Home</a></li>
+          <li><a href="about.html"   class="nav-link">About</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link btn-nav">Book a Session</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="nav-mobile-menu" id="mobile-nav">
+      <ul class="nav-mobile-list">
+        <li><a href="index.html"   class="nav-link">Home</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Book a Session</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+       Once Maya's hero photo is ready:
+         1. Upload it to images/hero/hero.jpg (or .webp)
+         2. Add this to the .hero element's inline style:
+            background-image: url('images/hero/hero.jpg');
+         3. Add class "has-photo" to .hero so text switches to white
+         4. Remove or keep the .hero-placeholder-bg div (it will
+            be hidden behind the real photo)
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-placeholder-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">South Florida Photography</span>
+      <h1>Maya's Moments FL</h1>
+      <p class="hero-tagline">Capturing Your Moments</p>
+      <div class="hero-cta-group">
+        <a href="gallery.html" class="btn btn-primary">View the Gallery</a>
+        <a href="contact.html" class="btn btn-outline">Book a Session</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROMO BANNER
+       ⚠️  THIS IS THE ONLY BLOCK YOU NEED TO EDIT TO CHANGE THE
+           CURRENT PROMOTION. Update the 5 values marked below.
+           No layout or CSS changes needed — text only.
+       ============================================================ -->
+  <section class="promo-banner">
+    <div class="promo-inner container">
+
+      <!-- The session type or offer name -->
+      <span class="promo-service">Mini Sessions</span>
+
+      <div class="promo-pricing">
+        <!-- Original (full) price — shown with strikethrough -->
+        <span class="promo-original">$250</span>
+        <!-- Sale price -->
+        <span class="promo-sale">$175</span>
+      </div>
+
+      <!-- The deadline — write it however you like -->
+      <span class="promo-through">through July 4th</span>
+
+      <a href="contact.html" class="btn-promo">Book This Offer</a>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       INTRO
+       ============================================================ -->
+  <section class="intro">
+    <div class="intro-inner container">
+      <span class="section-label">Welcome</span>
+      <h2>Every moment deserves to be remembered</h2>
+      <p>
+        Based in South Florida, Maya's Moments FL specializes in capturing the
+        real, unscripted magic in your most meaningful milestones — from
+        newborn snuggles and family beach sessions to wedding days and
+        everything in between.
+      </p>
+      <!-- ⚠️  PLACEHOLDER intro copy above — swap with Maya's preferred wording -->
+      <a href="about.html" class="btn btn-primary">Meet Maya</a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALLERY PREVIEW (featured categories on homepage)
+       Each .preview-card shows one category. To change which
+       categories appear here, update the data-category labels,
+       the image src paths, and the link hrefs.
+       ============================================================ -->
+  <section class="gallery-preview">
+    <div class="container">
+      <span class="section-label">Portfolio</span>
+      <h2>A glimpse of the gallery</h2>
+
+      <div class="preview-grid">
+
+        <div class="preview-card">
+          <img src="images/gallery/weddings/01.svg"
+               alt="Wedding photography"
+               loading="lazy" width="800" height="1067">
+          <div class="preview-card-label">
+            <span>Weddings</span>
+          </div>
+          <a href="gallery.html?filter=weddings" class="preview-card-link" aria-label="See wedding photos"></a>
+        </div>
+
+        <div class="preview-card">
+          <img src="images/gallery/family-sessions/02.svg"
+               alt="Family session photography"
+               loading="lazy" width="1200" height="800">
+          <div class="preview-card-label">
+            <span>Family Sessions</span>
+          </div>
+          <a href="gallery.html?filter=family-sessions" class="preview-card-link" aria-label="See family session photos"></a>
+        </div>
+
+        <div class="preview-card">
+          <img src="images/gallery/maternity/01.svg"
+               alt="Maternity photography"
+               loading="lazy" width="800" height="1067">
+          <div class="preview-card-label">
+            <span>Maternity</span>
+          </div>
+          <a href="gallery.html?filter=maternity" class="preview-card-link" aria-label="See maternity photos"></a>
+        </div>
+
+        <div class="preview-card">
+          <img src="images/gallery/newborn-fresh-48/02.svg"
+               alt="Newborn photography"
+               loading="lazy" width="1200" height="800">
+          <div class="preview-card-label">
+            <span>Newborn / Fresh 48</span>
+          </div>
+          <a href="gallery.html?filter=newborn-fresh-48" class="preview-card-link" aria-label="See newborn photos"></a>
+        </div>
+
+      </div>
+
+      <div class="preview-more">
+        <a href="gallery.html" class="btn btn-dark">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CTA SECTION
+       ============================================================ -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label">Let's Connect</span>
+      <h2>Ready to capture your moment?</h2>
+      <p>Serving South Florida — from Miami to Fort Myers and everywhere in between.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER (shared on every page)
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="Maya's Moments FL" width="56" height="56">
+        <p class="footer-tagline">Capturing Your Moments</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Social links -->
+      <div class="social-links" aria-label="Social media links">
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/mayas_moments_fl/"
+           class="social-link"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram: @mayas_moments_fl">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@mayasmomentsfl"
+           class="social-link"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="TikTok: @mayasmomentsfl">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.84 1.56V6.82a4.86 4.86 0 01-1.07-.13z"/>
+          </svg>
+        </a>
+
+        <!-- Facebook
+             ⚠️  This is a personal-profile-style URL, not a Business Page URL.
+             Ask Maya to convert her page to a proper Facebook Business Page to
+             get a clean vanity URL like facebook.com/MayasMomentsFl.
+             Then replace the href below with the cleaner URL. -->
+        <a href="https://www.facebook.com/profile.php?id=61576767068245"
+           class="social-link"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Facebook: Maya's Moments FL">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+          </svg>
+        </a>
+
+      </div>
+
+      <p class="footer-bottom">
+        &copy; <span id="footer-year"></span> Maya's Moments FL &mdash; All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

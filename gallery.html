@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Maya's Moments FL</title>
+  <meta name="description" content="Browse Maya's portfolio — weddings, family sessions, maternity, newborns, engagements, and more across South Florida.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="site-logo" aria-label="Maya's Moments FL — Home">
+        <img src="images/logo.jpg" alt="Maya's Moments FL logo" width="48" height="48">
+        <div class="logo-text">
+          Maya's Moments FL
+          <span>Capturing Your Moments</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html"   class="nav-link">Home</a></li>
+          <li><a href="about.html"   class="nav-link">About</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link btn-nav">Book a Session</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+    </div>
+
+    <div class="nav-mobile-menu" id="mobile-nav">
+      <ul class="nav-mobile-list">
+        <li><a href="index.html"   class="nav-link">Home</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Book a Session</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       PAGE HERO
+       ============================================================ -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Portfolio</span>
+      <h1>The Gallery</h1>
+      <p>Use the filters to browse by session type.</p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALLERY SECTION
+
+       HOW TO ADD REAL PHOTOS:
+       1. Put the photo file in the matching category folder inside
+          images/gallery/  (e.g. images/gallery/weddings/my-photo.jpg)
+       2. Copy one of the .gallery-item blocks below.
+       3. Update the img src= to point to your new file.
+       4. Update the alt= text to describe the photo.
+       5. Make sure data-category= and data-label= match the
+          correct category (see existing items for the slug values).
+       6. Delete the placeholder SVG items once real photos are in.
+
+       HOW TO ADD A NEW CATEGORY:
+       - This site uses a fixed category list. To add a category,
+         add a filter button in the filter bar, create a folder
+         in images/gallery/, and add gallery items with the new slug.
+       ============================================================ -->
+  <section class="gallery-section">
+    <div class="container">
+
+      <!-- Filter tabs (sticky, scrollable on mobile) -->
+      <div class="gallery-filters-wrap">
+        <div class="gallery-filters" role="group" aria-label="Filter photos by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="weddings">Weddings</button>
+          <button class="filter-btn" data-filter="family-sessions">Family Sessions</button>
+          <button class="filter-btn" data-filter="maternity">Maternity</button>
+          <button class="filter-btn" data-filter="newborn-fresh-48">Newborn / Fresh 48</button>
+          <button class="filter-btn" data-filter="engagement-sessions">Engagement Sessions</button>
+          <button class="filter-btn" data-filter="couple-sessions">Couple Sessions</button>
+          <button class="filter-btn" data-filter="birthday-parties">Birthday Parties</button>
+          <button class="filter-btn" data-filter="baby-showers-gender-reveals">Baby Showers / Gender Reveals</button>
+          <button class="filter-btn" data-filter="senior-portraits">Senior Portraits</button>
+          <button class="filter-btn" data-filter="courthouse-weddings-elopements">Courthouse Weddings / Elopements</button>
+          <button class="filter-btn" data-filter="engagement-proposals">Engagement Proposals</button>
+          <button class="filter-btn" data-filter="bachelorette-parties">Bachelorette Parties</button>
+          <button class="filter-btn" data-filter="anniversary-sessions">Anniversary Sessions</button>
+          <button class="filter-btn" data-filter="headshots-branding">Headshots / Branding</button>
+          <button class="filter-btn" data-filter="pet-photography">Pet Photography</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+      </div>
+
+      <!-- Gallery grid -->
+      <div class="gallery-grid" id="gallery-grid">
+
+        <!-- Empty state (shown if a filter has no results) -->
+        <p class="gallery-empty">No photos in this category yet &mdash; check back soon!</p>
+
+
+        <!-- ===== WEDDINGS ===== -->
+        <div class="gallery-item" data-category="weddings" data-label="Weddings">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/weddings/01.svg" alt="Wedding ceremony" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Weddings</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="weddings" data-label="Weddings">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/weddings/02.svg" alt="Wedding reception" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Weddings</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="weddings" data-label="Weddings">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/weddings/03.svg" alt="Wedding couple portrait" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Weddings</span></div>
+          </div>
+        </div>
+
+        <!-- ===== FAMILY SESSIONS ===== -->
+        <div class="gallery-item" data-category="family-sessions" data-label="Family Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/family-sessions/01.svg" alt="Family portrait session" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Family Sessions</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="family-sessions" data-label="Family Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/family-sessions/02.svg" alt="Family at the beach" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Family Sessions</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="family-sessions" data-label="Family Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/family-sessions/03.svg" alt="Family outdoor session" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Family Sessions</span></div>
+          </div>
+        </div>
+
+        <!-- ===== MATERNITY ===== -->
+        <div class="gallery-item" data-category="maternity" data-label="Maternity">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/maternity/01.svg" alt="Maternity portrait" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Maternity</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="maternity" data-label="Maternity">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/maternity/02.svg" alt="Maternity session" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Maternity</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="maternity" data-label="Maternity">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/maternity/03.svg" alt="Expectant couple" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Maternity</span></div>
+          </div>
+        </div>
+
+        <!-- ===== NEWBORN / FRESH 48 ===== -->
+        <div class="gallery-item" data-category="newborn-fresh-48" data-label="Newborn / Fresh 48">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/newborn-fresh-48/01.svg" alt="Newborn portrait" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Newborn / Fresh 48</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="newborn-fresh-48" data-label="Newborn / Fresh 48">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/newborn-fresh-48/02.svg" alt="Fresh 48 hospital session" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Newborn / Fresh 48</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="newborn-fresh-48" data-label="Newborn / Fresh 48">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/newborn-fresh-48/03.svg" alt="Newborn with family" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Newborn / Fresh 48</span></div>
+          </div>
+        </div>
+
+        <!-- ===== ENGAGEMENT SESSIONS ===== -->
+        <div class="gallery-item" data-category="engagement-sessions" data-label="Engagement Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/engagement-sessions/01.svg" alt="Engagement session portrait" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Engagement Sessions</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="engagement-sessions" data-label="Engagement Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/engagement-sessions/02.svg" alt="Engaged couple at sunset" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Engagement Sessions</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="engagement-sessions" data-label="Engagement Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/engagement-sessions/03.svg" alt="Engagement ring detail" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Engagement Sessions</span></div>
+          </div>
+        </div>
+
+        <!-- ===== COUPLE SESSIONS ===== -->
+        <div class="gallery-item" data-category="couple-sessions" data-label="Couple Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/couple-sessions/01.svg" alt="Couple portrait session" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Couple Sessions</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="couple-sessions" data-label="Couple Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/couple-sessions/02.svg" alt="Couple outdoor session" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Couple Sessions</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="couple-sessions" data-label="Couple Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/couple-sessions/03.svg" alt="Couple lifestyle session" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Couple Sessions</span></div>
+          </div>
+        </div>
+
+        <!-- ===== BIRTHDAY PARTIES ===== -->
+        <div class="gallery-item" data-category="birthday-parties" data-label="Birthday Parties">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/birthday-parties/01.svg" alt="Birthday party celebration" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Birthday Parties</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="birthday-parties" data-label="Birthday Parties">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/birthday-parties/02.svg" alt="Birthday cake and candles" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Birthday Parties</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="birthday-parties" data-label="Birthday Parties">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/birthday-parties/03.svg" alt="Kids birthday party" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Birthday Parties</span></div>
+          </div>
+        </div>
+
+        <!-- ===== BABY SHOWERS / GENDER REVEALS ===== -->
+        <div class="gallery-item" data-category="baby-showers-gender-reveals" data-label="Baby Showers / Gender Reveals">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/baby-showers-gender-reveals/01.svg" alt="Baby shower celebration" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Baby Showers / Gender Reveals</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="baby-showers-gender-reveals" data-label="Baby Showers / Gender Reveals">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/baby-showers-gender-reveals/02.svg" alt="Gender reveal moment" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Baby Showers / Gender Reveals</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="baby-showers-gender-reveals" data-label="Baby Showers / Gender Reveals">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/baby-showers-gender-reveals/03.svg" alt="Baby shower group photo" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Baby Showers / Gender Reveals</span></div>
+          </div>
+        </div>
+
+        <!-- ===== SENIOR PORTRAITS ===== -->
+        <div class="gallery-item" data-category="senior-portraits" data-label="Senior Portraits">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/senior-portraits/01.svg" alt="High school senior portrait" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Senior Portraits</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="senior-portraits" data-label="Senior Portraits">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/senior-portraits/02.svg" alt="Senior portrait outdoor" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Senior Portraits</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="senior-portraits" data-label="Senior Portraits">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/senior-portraits/03.svg" alt="Senior graduation portrait" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Senior Portraits</span></div>
+          </div>
+        </div>
+
+        <!-- ===== COURTHOUSE WEDDINGS / ELOPEMENTS ===== -->
+        <div class="gallery-item" data-category="courthouse-weddings-elopements" data-label="Courthouse Weddings / Elopements">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/courthouse-weddings-elopements/01.svg" alt="Courthouse wedding ceremony" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Courthouse Weddings / Elopements</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="courthouse-weddings-elopements" data-label="Courthouse Weddings / Elopements">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/courthouse-weddings-elopements/02.svg" alt="Elopement couple" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Courthouse Weddings / Elopements</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="courthouse-weddings-elopements" data-label="Courthouse Weddings / Elopements">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/courthouse-weddings-elopements/03.svg" alt="Intimate elopement ceremony" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Courthouse Weddings / Elopements</span></div>
+          </div>
+        </div>
+
+        <!-- ===== ENGAGEMENT PROPOSALS ===== -->
+        <div class="gallery-item" data-category="engagement-proposals" data-label="Engagement Proposals">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/engagement-proposals/01.svg" alt="Surprise engagement proposal" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Engagement Proposals</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="engagement-proposals" data-label="Engagement Proposals">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/engagement-proposals/02.svg" alt="Proposal moment" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Engagement Proposals</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="engagement-proposals" data-label="Engagement Proposals">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/engagement-proposals/03.svg" alt="Just engaged couple" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Engagement Proposals</span></div>
+          </div>
+        </div>
+
+        <!-- ===== BACHELORETTE PARTIES ===== -->
+        <div class="gallery-item" data-category="bachelorette-parties" data-label="Bachelorette Parties">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/bachelorette-parties/01.svg" alt="Bachelorette party celebration" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Bachelorette Parties</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="bachelorette-parties" data-label="Bachelorette Parties">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/bachelorette-parties/02.svg" alt="Bachelorette group photo" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Bachelorette Parties</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="bachelorette-parties" data-label="Bachelorette Parties">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/bachelorette-parties/03.svg" alt="Bride and friends" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Bachelorette Parties</span></div>
+          </div>
+        </div>
+
+        <!-- ===== ANNIVERSARY SESSIONS ===== -->
+        <div class="gallery-item" data-category="anniversary-sessions" data-label="Anniversary Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/anniversary-sessions/01.svg" alt="Anniversary couple portrait" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Anniversary Sessions</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="anniversary-sessions" data-label="Anniversary Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/anniversary-sessions/02.svg" alt="Anniversary session" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Anniversary Sessions</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="anniversary-sessions" data-label="Anniversary Sessions">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/anniversary-sessions/03.svg" alt="Couple anniversary photo" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Anniversary Sessions</span></div>
+          </div>
+        </div>
+
+        <!-- ===== HEADSHOTS / BRANDING ===== -->
+        <div class="gallery-item" data-category="headshots-branding" data-label="Headshots / Branding">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/headshots-branding/01.svg" alt="Professional headshot" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Headshots / Branding</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="headshots-branding" data-label="Headshots / Branding">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/headshots-branding/02.svg" alt="Business branding session" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Headshots / Branding</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="headshots-branding" data-label="Headshots / Branding">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/headshots-branding/03.svg" alt="Personal brand photography" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Headshots / Branding</span></div>
+          </div>
+        </div>
+
+        <!-- ===== PET PHOTOGRAPHY ===== -->
+        <div class="gallery-item" data-category="pet-photography" data-label="Pet Photography">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/pet-photography/01.svg" alt="Pet portrait" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Pet Photography</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="pet-photography" data-label="Pet Photography">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/pet-photography/02.svg" alt="Dog portrait outdoor" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Pet Photography</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="pet-photography" data-label="Pet Photography">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/pet-photography/03.svg" alt="Pet and owner session" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Pet Photography</span></div>
+          </div>
+        </div>
+
+        <!-- ===== OTHER ===== -->
+        <div class="gallery-item" data-category="other" data-label="Other">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/other/01.svg" alt="Photography session" loading="lazy" width="800" height="1067">
+            <div class="gallery-item-overlay"><span>Other</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="other" data-label="Other">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/other/02.svg" alt="Photography session" loading="lazy" width="1200" height="800">
+            <div class="gallery-item-overlay"><span>Other</span></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="other" data-label="Other">
+          <div class="gallery-item-inner">
+            <img src="images/gallery/other/03.svg" alt="Photography session" loading="lazy" width="900" height="900">
+            <div class="gallery-item-overlay"><span>Other</span></div>
+          </div>
+        </div>
+
+      </div><!-- /gallery-grid -->
+    </div><!-- /container -->
+  </section>
+
+
+  <!-- ============================================================
+       LIGHTBOX MODAL (hidden by default, opened by gallery.js)
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" tabindex="-1">
+    <button class="lightbox-close" aria-label="Close photo viewer">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous photo">&#8249;</button>
+    <button class="lightbox-next" aria-label="Next photo">&#8250;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       CTA
+       ============================================================ -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label">Book a session</span>
+      <h2>See something you love?</h2>
+      <p>Reach out and let's make your own beautiful memories.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="Maya's Moments FL" width="56" height="56">
+        <p class="footer-tagline">Capturing Your Moments</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="social-links" aria-label="Social media links">
+
+        <a href="https://www.instagram.com/mayas_moments_fl/"
+           class="social-link" target="_blank" rel="noopener noreferrer"
+           aria-label="Instagram: @mayas_moments_fl">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+
+        <a href="https://www.tiktok.com/@mayasmomentsfl"
+           class="social-link" target="_blank" rel="noopener noreferrer"
+           aria-label="TikTok: @mayasmomentsfl">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.84 1.56V6.82a4.86 4.86 0 01-1.07-.13z"/>
+          </svg>
+        </a>
+
+        <!-- ⚠️  FACEBOOK URL: personal-profile URL — swap once Maya converts to Business Page -->
+        <a href="https://www.facebook.com/profile.php?id=61576767068245"
+           class="social-link" target="_blank" rel="noopener noreferrer"
+           aria-label="Facebook: Maya's Moments FL">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+          </svg>
+        </a>
+
+      </div>
+
+      <p class="footer-bottom">
+        &copy; <span id="footer-year"></span> Maya's Moments FL &mdash; All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+
+  <!-- Deep-link filter: if URL has ?filter=category, auto-click that filter button -->
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var filter = params.get('filter');
+      if (filter) {
+        var btn = document.querySelector('.filter-btn[data-filter="' + filter + '"]');
+        if (btn) btn.click();
+      }
+    })();
+  </script>
+
+</body>
+</html>

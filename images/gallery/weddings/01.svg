@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1067">
+  <rect width="800" height="1067" fill="#EDE8E2"/>
+  <rect x="348" y="461" width="104" height="80" rx="7" fill="none" stroke="#B0A090" stroke-width="2.5"/>
+  <circle cx="400" cy="501" r="22" fill="none" stroke="#B0A090" stroke-width="2.5"/>
+  <circle cx="400" cy="501" r="9" fill="#B0A090"/>
+  <rect x="386" y="453" width="28" height="10" rx="4" fill="#B0A090"/>
+  <text x="400" y="557" font-family="Georgia,serif" font-size="28" fill="#8A7A70" text-anchor="middle">Weddings</text>
+  <text x="400" y="581" font-family="Georgia,serif" font-size="16" fill="#B0A090" text-anchor="middle">Placeholder Photo</text>
+</svg>

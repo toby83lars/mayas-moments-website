@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Thumbnail caches
+Thumbs.db
+ehthumbs.db
+
+# Claude Code internals
+.claude/
