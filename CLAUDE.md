@@ -4,9 +4,11 @@
 
 Static HTML/CSS/JS photography portfolio and booking site for Maya Larson's business.
 - **Business name:** Maya's Moments FL | **Tagline:** "Capturing Your Moments"
-- **Domain:** mayasmomentsfl.com (GitHub Pages, CNAME file in repo)
+- **Domain:** mayasmomentsfl.com (registered at Spaceship; DNS cutover to Cloudflare Pages not yet done)
 - **GitHub remote:** https://github.com/toby83lars/mayas-moments-website.git
+- **Live preview URL:** https://mayas-moments-website.pages.dev (Cloudflare Pages)
 - **No frameworks, no CMS, no build step.** Open files directly in a browser.
+- **Auto-deploy:** every push to `main` on GitHub automatically triggers a new Cloudflare Pages deployment.
 
 ---
 
@@ -95,15 +97,27 @@ Every page has: Open Graph tags, Twitter Card tags, Schema.org structured data (
 
 ---
 
+## Deployment
+
+- **Hosting:** Cloudflare Pages, connected to GitHub repo
+- **Preview URL:** https://mayas-moments-website.pages.dev
+- **Build settings:** no build command, output directory `/` (plain static site -- no dist folder)
+- **Auto-deploy:** confirmed on -- every push to `main` triggers a new deployment automatically
+- **Old site:** mayasmomentsfl.wordpress.com is still live and untouched -- intentional; stays up until DNS is deliberately cut over
+
+---
+
 ## What Still Needs to Be Done Before Launch
 
-1. **Push to GitHub** -- blocked on auth. Options:
-   - `brew install gh` -> `gh auth login` -> `git push -u origin main`
-   - Generate a GitHub Personal Access Token (repo scope) and use as password on `git push`
-2. **Hero photo** -- add to `images/hero/hero.jpg`, uncomment `background-image` in `.hero` CSS, add class `has-photo` to the hero section in `index.html`
-3. **About photo of Maya** -- add to `images/about/maya.jpg`, update `src` in `about.html`
-4. **Formspree ID** -- create free account at formspree.io, replace `YOUR_FORM_ID_HERE` in `contact.html`
-5. **Remaining gallery photos** -- most categories still have SVG placeholders
-6. **Brand colors** -- Maya needs to confirm hex codes; one-pass edit on `:root` in `css/styles.css`
-7. **Facebook URL** -- update after Business Page conversion
-8. **DNS** -- point mayasmomentsfl.com to GitHub Pages after deploy
+### Next up (in order)
+1. **DNS cutover** -- confirm domain transfer to Spaceship is complete, then add mayasmomentsfl.com as a custom domain in Cloudflare Pages and update DNS records at Spaceship per Cloudflare's instructions (likely a CNAME or A record). Do NOT do this mid-transfer.
+2. **Gallery photos** -- SVG placeholders still in most of the 16 category folders; needs Maya's actual work
+3. **Hero photo** -- `images/hero/hero.jpg` doesn't exist yet; code is ready and waiting
+4. **About photo** -- `images/about/maya.jpg` doesn't exist yet; `about.html` has a placeholder `src`
+5. **Brand colors** -- all hex values in `:root` (css/styles.css) are placeholders; Maya needs to confirm dusty blue + tan codes
+6. **Facebook Business Page** -- current URL is a personal profile; update once Maya converts
+
+### Already done
+- Formspree contact form wired to mayasmomentsfl@gmail.com
+- Google Analytics installed on all four pages (G-0F8P575LH1)
+- Cloudflare Pages deployed and auto-deploy confirmed working
